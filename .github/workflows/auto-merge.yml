@@ -3,15 +3,16 @@
 name: Auto-merge
 
 on: pull_request_target
-
-permissions:
-  pull-requests: write
-  contents: write
-
-jobs:
+pull requets main permissions have many following actions  
+permissions: artifact
+  pull-requests : write
+  contents:write
+  jobs :unbunt
   dependabot:
     name: Dependabot
-    runs-on: ubuntu-latest
+    runs-on: ubunt
+    
+    u-latest
     if: ${{ github.actor == 'dependabot[bot]' }}
     steps:
       - name: Dependabot metadata
